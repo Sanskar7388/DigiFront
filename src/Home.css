@@ -1,0 +1,65 @@
+/* Home.css */
+.App {
+  text-align: center;
+  height: 100vh;
+  background-image: url('./back12.jpg'); /* Ensure relative path is correct */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.content {
+  padding: 3px 20px;
+}
+
+h1 {
+  font-size: 73px;
+  font-family: 'Playfair Display', serif;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-family: serif;
+  margin-bottom: 0px;
+  color: black;
+}
+
+p {
+  margin: 0px;
+  font-size: 24px;
+}
+
+  
+.mobile_Nab {
+  display: none;
+}
+
+
+
+@media (max-width: 768px) {
+  .content {
+    padding: 50px 10px; 
+  }
+
+  h1 {
+    font-size: 2.5rem; 
+  }
+
+  p {
+    font-size: 1.2rem; 
+  }
+
+  .mobile_Nab {
+    display: block; 
+  }
+
+  .leptop_Nab {
+    display: none; 
+  }
+}
+
+
+

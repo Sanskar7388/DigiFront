@@ -1,0 +1,234 @@
+.mobile_Nab_contect {
+    display: none; 
+  }
+@media (max-width: 768px) {
+  
+  
+    .mobile_Nab_contect {
+      display: block; 
+    }
+  
+    .leptop_Nab_contect{
+      display: none; 
+    }
+  }
+  /* Container styling */
+/* App.css */
+/* App.css */
+:root {
+  --primary-color: #2c5282;
+  --secondary-color: #48bb78;
+  --bg-light: #f8f9fa;
+  --text-dark: #333;
+  --text-light: #4a5568;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+}
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.landing-container {
+  min-height: 100vh;
+  padding: clamp(1rem, 5vw, 2rem);
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: clamp(1rem, 3vw, 2rem);
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Grid Layout */
+.specifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 500px), 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Technical Specifications */
+.technical-specs {
+  background-color: var(--bg-light);
+  padding: clamp(1rem, 2vw, 1.5rem);
+  border-radius: 10px;
+}
+
+.technical-specs h3 {
+  color: var(--text-dark);
+  margin-bottom: var(--spacing-md);
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+}
+
+.technical-specs ul {
+  list-style: none;
+}
+
+.technical-specs ul li {
+  margin-bottom: var(--spacing-sm);
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+}
+
+.technical-specs ul ul {
+  padding-left: var(--spacing-md);
+  margin-top: var(--spacing-sm);
+}
+
+/* Features Section */
+.features-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.key-features .feature-box {
+  background-color: #e8f4ea;
+  padding: clamp(0.8rem, 2vw, 1rem);
+  border-radius: 8px;
+  margin-bottom: var(--spacing-md);
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-2px);
+}
+
+.feature-box h4 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-sm);
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+}
+
+.feature-box p {
+  font-size: clamp(0.85rem, 1.5vw, 0.9rem);
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+/* Applications */
+.applications ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.applications li {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+  white-space: nowrap;
+}
+
+/* Product Image Section */
+.product-image-section {
+  text-align: center;
+  margin: var(--spacing-lg) 0;
+}
+
+.product-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: var(--spacing-md);
+  object-fit: contain;
+}
+
+/* Button Styles */
+.book-now-btn {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: clamp(0.8rem, 2vw, 1rem) clamp(1.5rem, 3vw, 2rem);
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+}
+
+.book-now-btn:hover {
+  background-color: #38a169;
+  transform: translateY(-2px);
+}
+
+/* Brand Section */
+.brand-section {
+  text-align: center;
+  margin-top: var(--spacing-lg);
+}
+
+.brand-name {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-sm);
+}
+
+.brand-tagline {
+  color: var(--text-light);
+  font-style: italic;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .specifications-grid {
+    gap: var(--spacing-md);
+  }
+
+  .applications ul {
+    justify-content: center;
+  }
+
+  .technical-specs, 
+  .features-section {
+    padding: var(--spacing-md);
+  }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 480px) {
+  .product-card {
+    border-radius: 10px;
+  }
+
+  .applications li {
+    width: calc(50% - var(--spacing-sm));
+    text-align: center;
+  }
+
+  .feature-box {
+    margin-bottom: var(--spacing-sm);
+  }
+}
+
+/* Print styles */
+@media print {
+  .landing-container {
+    padding: 0;
+    background: white;
+  }
+
+  .product-card {
+    box-shadow: none;
+  }
+
+  .book-now-btn {
+    display: none;
+  }
+}

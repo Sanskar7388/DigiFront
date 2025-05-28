@@ -1,0 +1,102 @@
+.outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .signup-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(152, 185, 138 , 1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative; /* To position the cross icon */
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+ .button1 {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    border: none;
+    /* color: white; */
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .button1:hover {
+    background-color: #818883;
+  }
+  
+  /* Cross icon styles */
+  .cross-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .cross-icon:hover {
+    transform: rotate(90deg); /* Rotate on hover */
+  }
+  
+  /* Mobile styles */
+  @media only screen and (max-width: 768px) {
+    .signup-container {
+      margin: 20px auto;
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    input {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  
+    button {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  
+    .cross-icon {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  

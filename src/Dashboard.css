@@ -1,0 +1,332 @@
+
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-image: url('./Deshback.jpg');
+  background-size: cover;
+  background-position: center; */
+  /* filter: blur(8px); */
+  /* Optional: Adjust transparency */
+  /* opacity: 0.9; */
+}
+.logout-button {
+    background-color: #ff4d4d; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    width: 20vw;
+}
+
+.logout-buttonD {
+    position: sticky;
+    bottom: 0;
+}
+
+.logout-button:hover {
+    background-color: #e60000; 
+}
+
+
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+p {
+    font-size: 18px;
+    color: #666;
+}
+.left_desh2{
+    background-color: rgba(152, 185, 138 , 1);
+    /* background-color: red; */
+}
+
+.left_desh {
+    width: 20vw;
+    height: 36vh;
+    background-color: rgba(152, 185, 138 , 1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    /* opacity: 1; */
+}
+
+
+.desh_img {
+    width: 100%;
+}
+
+
+.desh_leftContaint {
+    width: 20vw;
+    height: 58vh;
+    background-color: rgba(229, 229, 229, 0,5);
+}
+
+
+.desh_Outer {
+    display: flex;
+    flex-direction: row;
+    /* filter: blur(8px); */
+    background-color: #ddd;
+    opacity: 0.9;
+}
+
+
+.desh_deviceCollection {
+    width: 950px;
+   
+}
+
+
+.add-device-button {
+    margin-bottom: 3px;
+    width: 75%;
+    margin: auto;
+    color: #333;
+    background-color: #ffffff; 
+    border-radius: 50px;   
+}
+
+
+.listofdevice {
+    width: 80%;
+    height: 70%;
+    border: 1px solid black;
+    background-color: rgba(152, 185, 138 , 1);
+    overflow-y: auto;
+    /* margin-top: 10px; */
+    margin: auto;
+
+}
+.device_list_effect{
+width: 100%;
+height: 30px;
+
+background-color: rgb(255,255,255);
+margin-bottom: 2px;
+
+}
+.device_list_effect:hover{
+    background-color: #666;
+    cursor: pointer;
+}
+
+.divName {
+    width: 100%;
+    height: 40px;
+    background-color: red;
+    margin-bottom: 4px;
+}
+
+.listofDevicesName{
+    margin-top: 9px;
+    margin-bottom: 3px;
+    background-color: (152, 185, 138 , 1);
+    width: 99%;
+    color: rgb(152, 185, 138);
+    font-size: 20px;
+}
+.makeItSticky {
+    
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+    
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+
+.makeItSticky:hover {
+    background-color: rgba(255, 255, 255, 0.9); 
+    color: black;
+    transform: scale(1.05); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); 
+}
+
+/* .................................................................................................................................................. */
+.backimage{
+    background-image: url('./Deshback.jpg');
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(8px);
+  background-color: #ddd;
+   opacity: 0.9;
+   
+}
+.namePadding2{
+   display: none;
+
+}
+.namePadding{
+    /* margin-top: 50px; */
+    position: absolute;
+    left: 50px;
+    top: 60px;
+    
+    /* background:rgba(255, 255, 255, 0.7); */
+}
+.dashkeuper{
+    background:rgba(255, 255, 255, 0.7);
+    
+}
+.dashboard-container{
+    position: relative;
+width: 79vw;
+    height: 100vh;
+    /* border: 2px dotted black; */
+    display: flex;
+   background:rgba(255, 255, 255, 0.7);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.container {
+    
+    max-width: 800px;
+    /* border:2px solid black; */
+    height: 270px;
+    max-height: 400px;
+    display: flex;
+}
+  .innercontainer{
+    overflow-x: auto;
+    border: 1px solid black;
+    width: 50vw;
+    height: 265px;
+    background-color: #ddd;
+    backdrop-filter: blur(6px);
+  }
+  .container_Sticky_Box {
+    background-color:rgba(152, 185, 138 );
+    width: 150px;
+    height: 35px;
+    padding-top: 4px;
+    text-align: center;
+    
+    flex-shrink: 0;
+    color: #ffffff;
+   
+   
+    
+    border: 1px solid white;
+}
+
+.container_Sticky_Box1{
+   background-color: #ddd;
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    flex-shrink: 0;
+ 
+    border: 1px solid white;
+}
+
+.lets_Fixe_table_col {
+   
+    /* top: 0; */
+    /* left: 0; */
+    /* z-index: 1999; */
+    width:150px;
+    /* background-color: greenyellow; Maintain a background for visibility */
+    display: flex;
+    flex-direction: column;
+}
+.container_Sticky_Box11{
+    background-color: #3d3d3d;
+     width: 150px;
+     height: 35px;
+     text-align: center;
+     flex-shrink: 0;
+     color: #ddd;
+     /* border: 1px solid white; */
+     border-right: #333;
+ }
+
+ .mobile_Nab12 {
+    display: none;
+  }
+  
+  
+  
+  @media (max-width: 968px) {
+   
+  
+    .namePadding2{
+        display: block;
+        position: absolute;
+    right: 50px;
+        top: 60px;
+    
+    }
+    
+    .mobile_Nab12{
+      display: block; 
+    }
+    .dashboard-container{
+        width: 100vw;
+    }
+    .listofdevice {
+        width: 103%;
+        height: 54%;
+    }
+  
+    /* .left_desh2 {
+       display: none;
+    } */
+    .backimage{
+        margin-left: 0;
+    }
+    .slidingWindow12 {
+        position: fixed;
+        top: 0;
+        left: -50vw; 
+        height: 100vh;
+        background-color: rgba(152, 185, 138 );
+        width: 30vw;
+        z-index: 9999999;
+        /* display: flex;
+        flex-direction: column; */
+        transition: left 0.5s ease-in-out; /* Smooth transition effect */
+      }
+    .slidingWindow13 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 0px; /* Move it into view */
+        transition: left 0.5s ease-in-out; /* Smooth transition effect */
+      }
+  }
+  
+
+
+ 
+  .slidingWindow13 {
+    left: 0; /* Move it into view */
+    transition: left 0.5s ease-in-out; /* Smooth transition effect */
+  }
